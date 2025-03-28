@@ -359,7 +359,7 @@ function Play() {
                   }`
                 }
                 className="w-40 rounded-sm lg:w-[45rem] ml-4 lg:ml-0"
-                alt=<img src="https://i.ytimg.com/vi/Mwf--eGs05U/maxresdefault.jpg" />
+                alt={<img src="https://i.ytimg.com/vi/Mwf--eGs05U/maxresdefault.jpg" />}
               />
             </div>
           </section>
@@ -376,7 +376,7 @@ function Play() {
                     {similarMovies &&
                       similarMovies.map((similarMovie) => {
                         return (
-                          <div class="max-w-sm shadow mb-4">
+                          <div className="max-w-sm shadow mb-4">
                             <img
                               src={
                                 similarMovie.backdrop_path
@@ -390,8 +390,8 @@ function Play() {
                                 window.location.reload(true);
                               }}
                             />
-                            <div class="p-1">
-                              <h5 class="mt-1 mb-2 text-xl sm:text-2xl font-bold tracking-tight text-white dark:text-white">
+                            <div className="p-1">
+                              <h5 className="mt-1 mb-2 text-xl sm:text-2xl font-bold tracking-tight text-white dark:text-white">
                                 {similarMovie.original_title ||
                                   similarMovie.title}
                               </h5>
@@ -433,7 +433,7 @@ function Play() {
                                   </svg>
                                 </div>
                               </div>
-                              <p class="mb-3 font-normal text-stone-400 line-clamp-3 text-xs sm:text-base">
+                              <p className="mb-3 font-normal text-stone-400 line-clamp-3 text-xs sm:text-base">
                                 {similarMovie.overview}
                               </p>
                             </div>

@@ -53,13 +53,13 @@ function Search() {
         <input
           onChange={Search}
           type="text"
-          class="w-[60%] xl:w-1/4 bg-stone-700 text-white outline-none sm:text-sm rounded focus:ring-primary-600 focus:border-primary-600 block p-2.5 placeholder:text-white"
+          className="w-[60%] xl:w-1/4 bg-stone-700 text-white outline-none sm:text-sm rounded focus:ring-primary-600 focus:border-primary-600 block p-2.5 placeholder:text-white"
           placeholder="Search for Movie name"
           required=""
         ></input>
         <button
           onClick={Search}
-          class="flex items-center px-8 text-white bg-red-800 -ml-2 focus:outline-none focus:ring-primary-300 transition ease-in-out font-medium rounded text-sm py-1 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+          className="flex items-center px-8 text-white bg-red-800 -ml-2 focus:outline-none focus:ring-primary-300 transition ease-in-out font-medium rounded text-sm py-1 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -86,9 +86,9 @@ function Search() {
             const converted = convertGenere(movie.genre_ids);
             return (
               <div className="p-1 mt-2 mb-5">
-                <div class="hover:scale-105 hover:border-2 group relative block overflow-hidden rounded-sm transition-all duration-500">
+                <div className="hover:scale-105 hover:border-2 group relative block overflow-hidden rounded-sm transition-all duration-500">
                   <a
-                    class="lightbox transition-all duration-500 group-hover:scale-105 tobii-zoom"
+                    className="lightbox transition-all duration-500 group-hover:scale-105 tobii-zoom"
                     title=""
                   >
                     <img
@@ -106,7 +106,7 @@ function Search() {
                       background:
                         "linear-gradient(0deg, hsl(0deg 0% 4% / 92%) 0%, hsl(0deg 0% 0% / 50%) 35%, hsl(220deg 26% 44% / 0%) 100%)",
                     }}
-                    class="hidden xl:block absolute -bottom-52 group-hover:bottom-0 w-full transition-all duration-500 p-4 rounded"
+                    className="hidden xl:block absolute -bottom-52 group-hover:bottom-0 w-full transition-all duration-500 p-4 rounded"
                   >
                     <div className="flex mb-1 transition ease-in-out delay-150">
                       {/* Play Button */}
@@ -191,7 +191,7 @@ function Search() {
                       </div>
                     </div>
 
-                    <a class="hover:text-primary-600 text-shadow-xl shadow-red-700 text-white text-base 2xl:text-2xl transition duration-500 font-medium">
+                    <a className="hover:text-primary-600 text-shadow-xl shadow-red-700 text-white text-base 2xl:text-2xl transition duration-500 font-medium">
                       {movie.name || movie.title}
                     </a>
 
